@@ -1,4 +1,4 @@
-# jasencarroll.com
+# jasenc.dev
 
 Personal site for Jasen Carroll. Static, fast, no backend.
 
