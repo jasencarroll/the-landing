@@ -17,3 +17,4 @@ frontend/dist/
 
 # IDE
 .idea/
+__pycache__/
