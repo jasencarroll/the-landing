@@ -29,8 +29,8 @@ export default function About() {
 			</h1>
 			<div className="space-y-12 max-w-2xl">
 				<p className="text-muted leading-relaxed">
-					Full-stack software engineer with 12+ years in FDA-regulated life sciences — medical
-					devices, pharma, Class II/III. I build production web apps, data pipelines, and AI tools,
+					Software quality engineer with 12+ years in FDA-regulated life sciences — medical devices,
+					pharma, Class II/III. I build compliance tooling, data pipelines, and production web apps,
 					and I bring deep domain knowledge in eQMS validation, FDA CSA, Part 11 compliance, and
 					quality systems.
 				</p>
