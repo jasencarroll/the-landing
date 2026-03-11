@@ -1,27 +1,16 @@
 # the-landing
 
-Personal website and landing page for Jasen Carroll. Static, fast, no backend.
+Personal portfolio site for Jasen Carroll, software engineer.
 
 **Live:** [jasencarroll.com](https://jasencarroll.com)
 
-## Table of Contents
-
-- [Tech Stack](#tech-stack)
-- [Pages](#pages)
-- [Getting Started](#getting-started)
-- [Development](#development)
-- [Deployment](#deployment)
-- [Project Structure](#project-structure)
-- [License](#license)
-
 ## Tech Stack
 
-- **Framework:** [Astro](https://astro.build/) v6 with static site generation
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/) v4
-- **Components:** React islands (CursorGlow, CommandPalette via cmdk)
-- **UI:** [Radix UI](https://www.radix-ui.com/) primitives, [Lucide](https://lucide.dev/) icons
+- **Backend:** FastAPI (health check + SPA static file serving, no database)
+- **Frontend:** React 19, React Router, Vite, Tailwind CSS v4, shadcn/ui
 - **Typography:** IBM Plex Mono
-- **Runtime:** Bun
+- **Tooling:** uv, Ruff, Bun, Biome, Docker, GitHub Actions CI
+- **Deployment:** Railway
 
 ## Pages
 
@@ -29,14 +18,17 @@ Personal website and landing page for Jasen Carroll. Static, fast, no backend.
 |-------|-------------|
 | `/` | Home |
 | `/about` | Background, current work, what I'm looking for |
-| `/projects` | bun-stack, specz, axiomlayer |
+| `/projects` | Portfolio with live deployment links |
 | `/resume` | Full work history |
 | `/contact` | LinkedIn |
+
+Features include a CommandPalette (Cmd+K) for keyboard navigation and a CursorGlow mouse-follow effect.
 
 ## Getting Started
 
 ### Prerequisites
 
+- [Python 3.12+](https://www.python.org/) with [uv](https://docs.astral.sh/uv/)
 - [Bun](https://bun.sh/) v1.2+
 
 ### Installation
@@ -44,59 +36,33 @@ Personal website and landing page for Jasen Carroll. Static, fast, no backend.
 ```bash
 git clone https://github.com/jasencarroll/the-landing.git
 cd the-landing
-bun install
+
+# Backend
+cd backend && uv sync
+
+# Frontend
+cd ../frontend && bun install
 ```
 
-## Development
+### Development
 
 ```bash
-bun run dev       # Start dev server
-bun run build     # Production build
-bun run preview   # Preview production build
+# Backend (port 8000)
+cd backend && uv run uvicorn app.main:app --reload
+
+# Frontend (port 5173, proxies /api to backend)
+cd frontend && bun run dev
+```
+
+### Production Build
+
+```bash
+cd frontend && bun run build   # Outputs to dist/, served by FastAPI
 ```
 
 ## Deployment
 
-### Railway
-
-The `railway.json` config handles the build and start commands automatically.
-
-```bash
-railway init
-railway up
-```
-
-## Project Structure
-
-```
-the-landing/
-├── public/                  # Static assets
-│   ├── favicon.ico
-│   └── favicon.svg
-├── src/
-│   ├── components/          # React islands
-│   │   ├── CommandPalette.tsx
-│   │   ├── CursorGlow.tsx
-│   │   └── ui/              # Radix-based UI primitives
-│   │       ├── badge.tsx
-│   │       └── button.tsx
-│   ├── layouts/
-│   │   └── Layout.astro
-│   ├── lib/
-│   │   └── utils.ts
-│   ├── pages/
-│   │   ├── index.astro
-│   │   ├── about.astro
-│   │   ├── contact.astro
-│   │   ├── projects.astro
-│   │   └── resume.astro
-│   └── styles/
-│       └── global.css
-├── astro.config.mjs
-├── components.json
-├── package.json
-└── tsconfig.json
-```
+Deployed on Railway using a multi-stage Dockerfile. Health check at `/api/health`.
 
 ## License
 
