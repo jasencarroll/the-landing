@@ -1,55 +1,58 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code when working with code in this repository.
-
 ## Build and Development Commands
 
 ```bash
-bun install                        # Install dependencies
-bun run dev                        # Start Astro dev server
+# Backend
+cd backend && uv sync              # Install Python dependencies
+uv run uvicorn app.main:app --reload  # Start dev server on :8000
+uv run pytest -v                   # Run tests
+uv run ruff check . && uv run ruff format --check .  # Lint
+
+# Frontend
+cd frontend && bun install         # Install JS dependencies
+bun run dev                        # Start Vite dev server on :5173
 bun run build                      # Production build (dist/)
-bun run preview                    # Preview production build
-bun run lint                       # Biome lint + format check
-bun run format                     # Biome auto-fix + format
+bun run lint                       # Biome lint check
 ```
 
 ## Architecture
 
-Personal portfolio and landing page for jasencarroll.com. Static site deployed on Railway.
+Personal portfolio site for jasencarroll.com. FastAPI backend serves React SPA.
 
-### Tech Stack
-
-- **Framework**: Astro 6 with React islands (`client:load`)
-- **Styling**: Tailwind CSS v4 (via Vite plugin), shadcn/ui components
-- **Linting/Formatting**: Biome (tabs, single quotes, no trailing commas)
-- **Package manager**: Bun
-- **Deployment**: Railway (static build served via `bunx serve`)
+- **Backend**: FastAPI (health check + static file serving)
+- **Frontend**: React 19 + Vite + Tailwind v4 + shadcn/ui + React Router
+- **Font**: IBM Plex Mono (Google Fonts)
+- **Deployment**: Railway (Dockerfile), health check at /api/health
 
 ### Key Directories
 
 ```
-src/
-  components/
-    CommandPalette.tsx       # Cmd+K command palette (React island)
-    CursorGlow.tsx           # Mouse-following glow effect (React island)
-    ui/                      # shadcn/ui primitives (Badge, Button)
-  layouts/
-    Layout.astro             # Base HTML layout with nav + global styles
-  pages/
-    index.astro              # Home page
-    about.astro              # About + tech stack
-    projects.astro           # Project showcase
-    resume.astro             # Full resume
-    contact.astro            # Contact / LinkedIn
-  lib/
-    utils.ts                 # cn() utility (clsx + tailwind-merge)
-  styles/
-    global.css               # Tailwind theme + base styles
+backend/
+  app/
+    main.py                  # FastAPI app, serves frontend/dist as SPA
+    routes/health.py         # GET /api/health
+  tests/
+frontend/
+  src/
+    components/
+      Layout.tsx             # Nav bar + CursorGlow + CommandPalette
+      CommandPalette.tsx     # Cmd+K navigation palette
+      CursorGlow.tsx         # Mouse-following glow effect
+      ui/badge.tsx           # shadcn/ui Badge
+    pages/
+      Home.tsx               # Landing page
+      About.tsx              # Bio + tech stack
+      Projects.tsx           # Portfolio with live deployment links
+      Resume.tsx             # Full resume
+      Contact.tsx            # LinkedIn CTA
+    lib/utils.ts             # cn() utility
+    index.css                # Tailwind theme
 ```
 
 ### Conventions
 
-- Astro pages use `.astro` files; interactive components are React `.tsx` with `client:load`
+- No database (static portfolio site)
 - Path alias `@/` maps to `src/`
-- shadcn/ui config in `components.json`
-- Biome only checks `src/**/*.ts` and `src/**/*.tsx` (not `.astro` files)
+- Biome: tabs, single quotes, lineWidth 100
+- Vite proxies `/api` to backend dev server
