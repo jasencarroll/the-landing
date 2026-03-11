@@ -11,22 +11,14 @@ export default function Contact() {
 					platforms, and compliance tooling startups. Most interested in QMS modernization,
 					compliance-as-code, and regulatory intelligence tooling.
 				</p>
-				<div className="flex flex-col sm:flex-row gap-4">
-					<a
-						href="mailto:jc@jasencarroll.com"
-						className="inline-flex px-8 py-4 border-2 border-foreground text-foreground text-sm tracking-wider hover:border-primary hover:bg-primary/10 transition-all duration-200"
-					>
-						jc@jasencarroll.com
-					</a>
-					<a
-						href="https://linkedin.com/in/jasenc"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="inline-flex px-8 py-4 border-2 border-border text-muted text-sm tracking-wider hover:border-foreground hover:text-foreground transition-all duration-200"
-					>
-						LinkedIn ↗
-					</a>
-				</div>
+				<a
+					href="https://linkedin.com/in/jasenc"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="inline-flex px-8 py-4 border-2 border-foreground text-foreground text-sm tracking-wider hover:border-primary hover:bg-primary/10 transition-all duration-200"
+				>
+					Connect on LinkedIn ↗
+				</a>
 			</div>
 		</div>
 	);
