@@ -72,9 +72,16 @@ export default function Projects() {
 						className="border border-border p-6 hover:border-primary/50 hover:bg-card transition-all duration-200 group"
 					>
 						<div className="flex items-start justify-between gap-4 mb-3">
-							<h2 className="text-base font-bold tracking-wider group-hover:text-primary transition-colors">
-								{p.name}
-							</h2>
+							<a
+								href={p.live ?? p.href}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="hover:underline"
+							>
+								<h2 className="text-base font-bold tracking-wider group-hover:text-primary transition-colors">
+									{p.name}
+								</h2>
+							</a>
 							<div className="flex gap-3 shrink-0">
 								{p.live && (
 									<a
