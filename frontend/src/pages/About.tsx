@@ -29,10 +29,10 @@ export default function About() {
 			</h1>
 			<div className="space-y-12 max-w-2xl">
 				<p className="text-muted leading-relaxed">
-					Full-stack software engineer with 12 years in FDA-regulated manufacturing — medical
-					devices, pharma combination products, Class II/III. I build production web apps, data
-					pipelines, and AI tools, and I bring deep domain knowledge in quality systems, compliance,
-					and regulatory operations.
+					Full-stack software engineer with 12+ years in FDA-regulated life sciences — medical
+					devices, pharma, Class II/III. I build production web apps, data pipelines, and AI tools,
+					and I bring deep domain knowledge in eQMS validation, FDA CSA, Part 11 compliance, and
+					quality systems.
 				</p>
 
 				<section>
@@ -58,9 +58,9 @@ export default function About() {
 						</p>
 						<p>
 							I've run CAPA programs under consent decree at Philips, defended EU MDR tech file
-							audits solo at Acumed, written Part 11 compliance tooling, and managed sterilization
-							validation for Class III devices. I've used the QMS software. I know where it falls
-							short.
+							audits at Acumed, validated Windchill PLM at two global medical device orgs, and built
+							Part 11 compliance tooling adopted as standard practice. Four years of hands-on eQMS
+							validation — CSA, GAMP5, IQ/OQ/PQ.
 						</p>
 						<p>
 							I didn't pivot away from regulated industries — I gained the engineering skills to
@@ -93,12 +93,12 @@ export default function About() {
 					</h2>
 					<div className="space-y-4 text-sm text-muted leading-relaxed">
 						<p>
-							Software engineering roles at MedTech companies, FDA software vendors, eQMS platforms,
-							or compliance tooling startups. The intersection of deep regulated industry knowledge
-							and software engineering is rare — I bring both.
+							Software quality and engineering roles at MedTech companies, FDA software vendors,
+							eQMS platforms, or compliance tooling startups. The intersection of eQMS validation
+							experience and full-stack engineering is rare — I bring both.
 						</p>
 						<p>
-							Interested in: QMS modernization, compliance-as-code, regulatory intelligence tooling,
+							Interested in: eQMS modernization, FDA CSA implementation, compliance-as-code,
 							validation automation, and anything that makes quality teams more effective.
 						</p>
 						<p>Remote preferred. Based in Philadelphia.</p>

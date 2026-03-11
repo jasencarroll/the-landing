@@ -11,8 +11,9 @@ export default function Home() {
 					Jasen Carroll
 				</h1>
 				<p className="text-base md:text-lg text-muted max-w-2xl mb-4 leading-relaxed">
-					Full-stack software engineer with 12 years in FDA-regulated manufacturing. I build
-					production web apps, data pipelines, and AI tools with Python and TypeScript.
+					Full-stack software engineer with 12+ years in FDA-regulated life sciences. I build
+					production web apps, data pipelines, and AI tools — with deep experience in eQMS
+					validation, FDA CSA, and Part 11 compliance.
 				</p>
 				<p className="text-sm text-muted max-w-2xl mb-12 leading-relaxed">
 					I've been on the other side of the software quality teams depend on — I know where it

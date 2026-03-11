@@ -7,9 +7,9 @@ export default function Contact() {
 					Get in Touch
 				</h1>
 				<p className="text-muted text-sm leading-relaxed mb-8 max-w-lg">
-					I'm open to software engineering roles at MedTech companies, FDA software vendors, eQMS
-					platforms, and compliance tooling startups. Most interested in QMS modernization,
-					compliance-as-code, and regulatory intelligence tooling.
+					I'm open to software quality and engineering roles at MedTech companies, FDA software
+					vendors, eQMS platforms, and compliance tooling startups. Most interested in eQMS
+					modernization, FDA CSA implementation, compliance-as-code, and validation automation.
 				</p>
 				<a
 					href="https://linkedin.com/in/jasenc"
