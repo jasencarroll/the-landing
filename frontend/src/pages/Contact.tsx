@@ -13,10 +13,10 @@ export default function Contact() {
 				</p>
 				<div className="flex flex-col sm:flex-row gap-4">
 					<a
-						href="mailto:jasencarroll@gmail.com"
+						href="mailto:jc@jasencarroll.com"
 						className="inline-flex px-8 py-4 border-2 border-foreground text-foreground text-sm tracking-wider hover:border-primary hover:bg-primary/10 transition-all duration-200"
 					>
-						jasencarroll@gmail.com
+						jc@jasencarroll.com
 					</a>
 					<a
 						href="https://linkedin.com/in/jasenc"
