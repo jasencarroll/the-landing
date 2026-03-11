@@ -27,7 +27,7 @@ const projects = [
 		desc: 'FDA recalls data dashboard with interactive analytics — classification breakdown, defect analysis, timeline trends, and actionable insights.',
 		tags: ['FastAPI', 'React', 'PostgreSQL', 'Recharts'],
 		href: 'https://github.com/jasencarroll/packaging_recalls',
-		live: 'https://packaging-recalls-production.up.railway.app',
+		live: 'https://packagingrecalls-production.up.railway.app',
 	},
 	{
 		name: 'Recipe Recommender',
