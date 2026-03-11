@@ -2,8 +2,14 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "command": "./node_modules/.bin/astro dev",
-      "name": "Development server",
+      "command": "cd backend && uv run uvicorn app.main:app --reload --port 8000",
+      "name": "Backend (FastAPI)",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "command": "cd frontend && bun run dev",
+      "name": "Frontend (Vite)",
       "request": "launch",
       "type": "node-terminal"
     }
