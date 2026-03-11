@@ -10,8 +10,8 @@ export default function Resume() {
 					bullets: [
 						'Lead QE for auto-injector product lines supporting Eli Lilly — drove CAPAs, deviations, and nonconformances to effective closure.',
 						'Updated site-wide Change Control procedures, reducing CAPA trends related to change control failures.',
-						'Implemented Source Code Review and Software Backup processes to strengthen GAMP5 compliance.',
-						'Developed UAM evaluation tools consolidating 21 CFR 211, 21 CFR 820, Part 11, and Data Integrity guidance.',
+						'Implemented risk-based Source Code Review and Software Backup procedures to strengthen GAMP5 Cat 4/5 compliance posture.',
+						'Developed UAM evaluation framework consolidating 21 CFR 211, 21 CFR 820, Part 11, and FDA Data Integrity guidance into single audit-ready tool.',
 					],
 				},
 				{
@@ -42,8 +42,9 @@ export default function Resume() {
 					title: 'Software Validation Engineer',
 					period: 'Jul 2019 – Aug 2020',
 					bullets: [
-						'Managed Non-Product System Software procedures under active consent decree.',
-						'Facilitated team of eight for Periodic Review Reports initiative reported as 2020 KPI.',
+						'Managed Non-Product System Software validation portfolio under active consent decree — maintained compliant status across 20+ systems during heightened regulatory scrutiny.',
+						'Led Periodic Review Reports initiative for team of eight; delivered on-time as reported 2020 KPI under consent decree remediation program.',
+						'Applied risk-based approach to prioritize validation activities across GAMP Cat 3–5 systems in alignment with site QMS requirements.',
 					],
 				},
 			],
@@ -89,11 +90,10 @@ export default function Resume() {
 		},
 	];
 
-	const swEngineering = [
-		'Built Bun Stack: production-grade full-stack framework generator (10 GitHub stars).',
-		'Built Specz: conversational AI tool for generating software specifications through guided interviews.',
-		'Deployed two-node K3s Kubernetes cluster over Tailscale with n8n workflow automation.',
-		'Architected local-first LLM infrastructure using Open WebUI + Ollama, cutting cloud AI costs by 60%+.',
+	const complianceTooling = [
+		'Developed UAM and software inventory evaluation tools using Python and TypeScript for internal QMS use.',
+		'Built FDA packaging recalls analytics dashboard — pipeline ingesting public recall data for trend analysis and risk classification.',
+		'Authored full-stack applications demonstrating production software development capability aligned to SDLC validation requirements.',
 	];
 
 	const education = [
@@ -123,15 +123,14 @@ export default function Resume() {
 				<section>
 					<h2 className="text-xs text-muted tracking-widest uppercase mb-4">Summary</h2>
 					<p className="text-sm text-muted leading-relaxed">
-						Quality Engineering leader with 12+ years in regulated life sciences (FDA 21 CFR
-						820/211, ISO 13485, EU MDR) including direct experience in consent decree, 483, and
-						warning letter environments. Proven ability to stand up and optimize CAPA programs at
-						scale — reduced global CAPA backlog by 50% through CRB re-implementation. Background
-						spans manufacturing operations, process validation, sterilization, and software quality
-						across Class II/III medical devices and pharmaceutical combination products. Delivered
-						$0.5M+ in operational savings through LEAN initiatives. Now building software for
-						regulated industries. MBA with Six Sigma Green Belt and active MS in Software
-						Engineering.
+						Computer Software Assurance specialist with 12+ years in FDA-regulated life sciences (21
+						CFR Part 11, 21 CFR 820/211, ISO 13485, EU MDR). Hands-on experience executing
+						risk-based software validation under active consent decree, managing Non-Product System
+						Software portfolios, and authoring GAMP5-aligned procedures across Class II/III medical
+						devices and pharmaceutical combination products. Direct experience in 483, warning
+						letter, and notified body audit environments — zero findings as validation SME. MS
+						Software Engineering in progress; builds internal compliance tooling. Six Sigma Green
+						Belt. MBA.
 					</p>
 				</section>
 
@@ -170,16 +169,14 @@ export default function Resume() {
 				</section>
 
 				<section>
-					<h2 className="text-xs text-muted tracking-widest uppercase mb-4">
-						Software Engineering
-					</h2>
+					<h2 className="text-xs text-muted tracking-widest uppercase mb-4">Compliance Tooling</h2>
 					<div className="pl-4 border-l border-border">
 						<div className="flex justify-between items-baseline mb-2">
 							<p className="text-sm text-primary">Independent — jasencarroll.com</p>
 							<span className="text-xs text-muted">Sep 2024 – Present</span>
 						</div>
 						<ul className="space-y-1">
-							{swEngineering.map((b) => (
+							{complianceTooling.map((b) => (
 								<li
 									key={b}
 									className="text-xs text-muted leading-relaxed before:content-['—'] before:mr-2 before:text-border"
