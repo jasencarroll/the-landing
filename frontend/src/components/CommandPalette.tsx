@@ -53,9 +53,11 @@ export function CommandPalette() {
 	const handleKeyDown = (e: React.KeyboardEvent) => {
 		if (e.key === 'ArrowDown') {
 			e.preventDefault();
+			if (filtered.length === 0) return;
 			setSelected((s) => (s + 1) % filtered.length);
 		} else if (e.key === 'ArrowUp') {
 			e.preventDefault();
+			if (filtered.length === 0) return;
 			setSelected((s) => (s - 1 + filtered.length) % filtered.length);
 		} else if (e.key === 'Enter') {
 			e.preventDefault();

@@ -28,7 +28,7 @@ Features include a CommandPalette (Cmd+K) for keyboard navigation and a CursorGl
 
 ### Prerequisites
 
-- [Python 3.12+](https://www.python.org/) with [uv](https://docs.astral.sh/uv/)
+- [Python 3.11+](https://www.python.org/) with [uv](https://docs.astral.sh/uv/)
 - [Bun](https://bun.sh/) v1.2+
 
 ### Installation
