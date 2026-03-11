@@ -3,25 +3,21 @@ import { Badge } from '@/components/ui/badge';
 const workingOn = [
 	{
 		name: 'Specz',
-		desc: 'Conversational AI tool that conducts structured product intake interviews and generates comprehensive software specifications. Magic-link auth, Mistral AI chat, traceable decisions.',
+		desc: 'AI tool that conducts structured product interviews and generates numbered requirements, risk assessments, and API specs. Magic-link auth, Mistral AI streaming, full spec management.',
 	},
 	{
 		name: 'Packaging Recalls',
-		desc: 'FDA recalls data dashboard with interactive analytics — classification breakdown, defect analysis, timeline trends, and actionable insights from real FDA data.',
-	},
-	{
-		name: 'Recipe Recommender',
-		desc: 'ML-powered recipe recommendation using K-means clustering. Search and discover recipes from 200K+ Food.com entries based on cook time and complexity preferences.',
+		desc: 'FDA recalls analytics dashboard — 495 drug recalls with classification breakdown, defect analysis, cost impact, and timeline trends. Full data pipeline from openFDA API to PostgreSQL.',
 	},
 ];
 
 const techStack = [
 	{ label: 'Languages', items: ['TypeScript', 'Python', 'SQL'] },
-	{ label: 'Frontend', items: ['React', 'Tailwind', 'Vite'] },
-	{ label: 'Backend', items: ['FastAPI', 'SQLAlchemy'] },
-	{ label: 'Data', items: ['PostgreSQL', 'scikit-learn', 'pandas'] },
+	{ label: 'Frontend', items: ['React', 'Tailwind CSS', 'Vite', 'shadcn/ui'] },
+	{ label: 'Backend', items: ['FastAPI', 'SQLAlchemy', 'PostgreSQL'] },
+	{ label: 'Data & ML', items: ['scikit-learn', 'pandas', 'Recharts', 'LightGBM'] },
 	{ label: 'Infrastructure', items: ['Docker', 'Railway', 'GitHub Actions'] },
-	{ label: 'Regulated', items: ['TrackWise', 'MasterControl', 'ETQ', 'Minitab'] },
+	{ label: 'QMS Platforms', items: ['TrackWise', 'MasterControl', 'ETQ', 'Minitab'] },
 ];
 
 export default function About() {
@@ -33,13 +29,14 @@ export default function About() {
 			</h1>
 			<div className="space-y-12 max-w-2xl">
 				<p className="text-muted leading-relaxed">
-					I'm a software engineer with 12 years in FDA-regulated manufacturing. I build tools for
-					quality teams, compliance programs, and regulated systems — because I've been on the other
-					side of the software those teams depend on.
+					Full-stack software engineer with 12 years in FDA-regulated manufacturing — medical
+					devices, pharma combination products, Class II/III. I build production web apps, data
+					pipelines, and AI tools, and I bring deep domain knowledge in quality systems, compliance,
+					and regulatory operations.
 				</p>
 
 				<section>
-					<h2 className="text-xs text-muted tracking-widest uppercase mb-6">What I'm Working On</h2>
+					<h2 className="text-xs text-muted tracking-widest uppercase mb-6">Featured Work</h2>
 					<div className="space-y-6">
 						{workingOn.map((project) => (
 							<div key={project.name} className="border-l-2 border-border pl-6">
@@ -54,10 +51,10 @@ export default function About() {
 					<h2 className="text-xs text-muted tracking-widest uppercase mb-6">Background</h2>
 					<div className="space-y-4 text-sm text-muted leading-relaxed">
 						<p>
-							I spent 12 years in FDA-regulated manufacturing — medical devices, pharma combination
-							products, Class II/III. System failures in that world meant 483 observations, warning
-							letters, and product recalls. That shaped how I think about software: understand
-							failure modes, build in observability, design systems that degrade gracefully.
+							I spent 12 years in FDA-regulated manufacturing. System failures in that world meant
+							483 observations, warning letters, and product recalls. That shaped how I think about
+							software: understand failure modes, build in observability, design systems that
+							degrade gracefully.
 						</p>
 						<p>
 							I've run CAPA programs under consent decree at Philips, defended EU MDR tech file
@@ -101,7 +98,7 @@ export default function About() {
 							and software engineering is rare — I bring both.
 						</p>
 						<p>
-							Interested in: QMS software, compliance-as-code, regulatory intelligence tooling,
+							Interested in: QMS modernization, compliance-as-code, regulatory intelligence tooling,
 							validation automation, and anything that makes quality teams more effective.
 						</p>
 						<p>Remote preferred. Based in Philadelphia.</p>

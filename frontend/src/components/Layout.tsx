@@ -1,7 +1,20 @@
 import type { ReactNode } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { CommandPalette } from './CommandPalette';
 import { CursorGlow } from './CursorGlow';
+
+function NavLink({ to, children }: { to: string; children: ReactNode }) {
+	const { pathname } = useLocation();
+	const active = pathname === to;
+	return (
+		<Link
+			to={to}
+			className={`hover:text-foreground transition-colors ${active ? 'text-foreground' : ''}`}
+		>
+			{children}
+		</Link>
+	);
+}
 
 export default function Layout({ children }: { children: ReactNode }) {
 	return (
@@ -16,18 +29,10 @@ export default function Layout({ children }: { children: ReactNode }) {
 						JC
 					</Link>
 					<div className="flex gap-8 text-xs text-muted tracking-wider">
-						<Link to="/about" className="hover:text-foreground transition-colors">
-							about
-						</Link>
-						<Link to="/projects" className="hover:text-foreground transition-colors">
-							projects
-						</Link>
-						<Link to="/resume" className="hover:text-foreground transition-colors">
-							resume
-						</Link>
-						<Link to="/contact" className="hover:text-foreground transition-colors">
-							contact
-						</Link>
+						<NavLink to="/about">about</NavLink>
+						<NavLink to="/projects">projects</NavLink>
+						<NavLink to="/resume">resume</NavLink>
+						<NavLink to="/contact">contact</NavLink>
 					</div>
 				</div>
 			</nav>
