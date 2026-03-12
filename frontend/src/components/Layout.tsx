@@ -29,10 +29,10 @@ export default function Layout({ children }: { children: ReactNode }) {
 						JC
 					</Link>
 					<div className="flex gap-8 text-xs text-muted tracking-wider">
-						<NavLink to="/about">about</NavLink>
-						<NavLink to="/projects">projects</NavLink>
 						<NavLink to="/resume">resume</NavLink>
 						<NavLink to="/contact">contact</NavLink>
+						<NavLink to="/about">about</NavLink>
+						<NavLink to="/projects">projects</NavLink>
 					</div>
 				</div>
 			</nav>

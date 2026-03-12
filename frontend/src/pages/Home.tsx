@@ -27,13 +27,13 @@ export default function Home() {
 						Consulting ↗
 					</a>
 					<Link
-						to="/projects"
+						to="/resume"
 						className="px-8 py-4 border-2 border-foreground text-foreground text-sm tracking-wider hover:border-primary hover:bg-primary/10 transition-all duration-200"
 					>
 						Projects
 					</Link>
 					<Link
-						to="/about"
+						to="/contact"
 						className="px-8 py-4 border-2 border-border text-muted text-sm tracking-wider hover:border-foreground hover:text-foreground transition-all duration-200"
 					>
 						About
