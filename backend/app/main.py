@@ -4,10 +4,11 @@ from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-from .routes import health
+from .routes import contact, health
 
 app = FastAPI(title="the-landing")
 app.include_router(health.router)
+app.include_router(contact.router)
 
 frontend_dir = Path(__file__).resolve().parent.parent.parent / "frontend" / "dist"
 if frontend_dir.exists():
