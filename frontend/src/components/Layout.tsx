@@ -38,9 +38,9 @@ export default function Layout({ children }: { children: ReactNode }) {
 							consulting ↗
 						</a>
 						<NavLink to="/resume">resume</NavLink>
-						<NavLink to="/contact">contact</NavLink>
-						<NavLink to="/about">about</NavLink>
 						<NavLink to="/projects">projects</NavLink>
+						<NavLink to="/about">about</NavLink>
+						<NavLink to="/contact">contact</NavLink>
 					</div>
 				</div>
 			</nav>

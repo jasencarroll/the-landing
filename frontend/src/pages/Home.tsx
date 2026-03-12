@@ -33,7 +33,7 @@ export default function Home() {
 						Projects
 					</Link>
 					<Link
-						to="/contact"
+						to="/projects"
 						className="px-8 py-4 border-2 border-border text-muted text-sm tracking-wider hover:border-foreground hover:text-foreground transition-all duration-200"
 					>
 						About
