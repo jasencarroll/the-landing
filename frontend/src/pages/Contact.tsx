@@ -19,6 +19,22 @@ export default function Contact() {
 				>
 					Connect on LinkedIn ↗
 				</a>
+
+				<div className="mt-16 pt-8 border-t border-border max-w-lg">
+					<p className="text-xs text-muted tracking-widest uppercase mb-3">Consulting</p>
+					<p className="text-muted text-sm leading-relaxed mb-4">
+						Also available for FDA consulting engagements — CSA buildouts, IEC 62304 SDLCs, QMSR
+						transitions, and fractional quality leadership.
+					</p>
+					<a
+						href="https://consulting.jasencarroll.com"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="inline-flex px-8 py-4 border-2 border-border text-muted text-sm tracking-wider hover:border-foreground hover:text-foreground transition-all duration-200"
+					>
+						consulting.jasencarroll.com ↗
+					</a>
+				</div>
 			</div>
 		</div>
 	);

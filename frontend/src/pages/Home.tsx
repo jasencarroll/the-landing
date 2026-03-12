@@ -4,9 +4,7 @@ export default function Home() {
 	return (
 		<div className="min-h-[calc(100vh-4rem)] flex items-center justify-center px-6">
 			<div className="max-w-4xl w-full">
-				<p className="text-xs text-muted tracking-widest uppercase mb-6">
-					Philadelphia, PA — Open to work
-				</p>
+				<p className="text-xs text-muted tracking-widest uppercase mb-6">Philadelphia, PA</p>
 				<h1 className="text-6xl md:text-8xl font-bold tracking-wider uppercase mb-6 leading-none">
 					Jasen Carroll
 				</h1>
@@ -20,9 +18,17 @@ export default function Home() {
 					falls short, and I build better alternatives.
 				</p>
 				<div className="flex flex-col sm:flex-row gap-4">
+					<a
+						href="https://consulting.jasencarroll.com"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="px-8 py-4 border-2 border-[#c9703c] text-[#c9703c] text-sm tracking-wider hover:bg-[#c9703c]/10 transition-all duration-200"
+					>
+						Consulting ↗
+					</a>
 					<Link
 						to="/projects"
-						className="px-8 py-4 border-2 border-foreground text-foreground text-sm tracking-wider hover:border-primary hover:bg-primary/10 transition-all duration-200"
+						className="px-8 py-4 border-2 border-border text-muted text-sm tracking-wider hover:border-foreground hover:text-foreground transition-all duration-200"
 					>
 						Projects
 					</Link>
