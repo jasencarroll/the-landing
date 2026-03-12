@@ -123,14 +123,14 @@ export default function Resume() {
 				<section>
 					<h2 className="text-xs text-muted tracking-widest uppercase mb-4">Summary</h2>
 					<p className="text-sm text-muted leading-relaxed">
-						Computer Software Assurance specialist with 12+ years in FDA-regulated life sciences (21
-						CFR Part 11, 21 CFR 820/211, ISO 13485, EU MDR). Hands-on experience executing
-						risk-based software validation under active consent decree, managing Non-Product System
-						Software portfolios, and authoring GAMP5-aligned procedures across Class II/III medical
-						devices and pharmaceutical combination products. Direct experience in 483, warning
-						letter, and notified body audit environments — zero findings as validation SME. MS
-						Software Engineering in progress; builds internal compliance tooling. Six Sigma Green
-						Belt. MBA.
+						CSA implementation, AI/ML validation in GxP, and quality systems architecture across
+						medical devices, pharma, and combination products (21 CFR Part 11, 21 CFR 820/211, ISO
+						13485, IEC 62304, EU MDR). Hands-on experience executing risk-based software validation
+						under active consent decree, managing Non-Product System Software portfolios, and
+						authoring GAMP5-aligned procedures across Class II/III medical devices. Direct
+						experience in 483, warning letter, and notified body audit environments — zero findings
+						as validation SME. MS Software Engineering in progress; builds production compliance
+						tooling. Six Sigma Green Belt. MBA.
 					</p>
 				</section>
 

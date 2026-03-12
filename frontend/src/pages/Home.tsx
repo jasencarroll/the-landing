@@ -9,13 +9,13 @@ export default function Home() {
 					Jasen Carroll
 				</h1>
 				<p className="text-base md:text-lg text-muted max-w-2xl mb-4 leading-relaxed">
-					Software quality engineer with 12+ years in FDA-regulated life sciences. I build
-					compliance tooling, data pipelines, and production web apps — with deep experience in eQMS
-					validation, FDA CSA, and Part 11 compliance.
+					I help regulated companies operationalize CSA, validate AI/ML systems in GMP environments,
+					and stand up IEC 62304 SDLCs. I also write the software — compliance tooling, data
+					pipelines, and production web apps.
 				</p>
 				<p className="text-sm text-muted max-w-2xl mb-12 leading-relaxed">
-					I've been on the other side of the software quality teams depend on — I know where it
-					falls short, and I build better alternatives.
+					I didn't pivot away from regulated industries. I gained the engineering skills to build
+					better tools for them.
 				</p>
 				<div className="flex flex-col sm:flex-row gap-4">
 					<a

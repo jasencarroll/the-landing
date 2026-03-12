@@ -29,10 +29,9 @@ export default function About() {
 			</h1>
 			<div className="space-y-12 max-w-2xl">
 				<p className="text-muted leading-relaxed">
-					Software quality engineer with 12+ years in FDA-regulated life sciences — medical devices,
-					pharma, Class II/III. I build compliance tooling, data pipelines, and production web apps,
-					and I bring deep domain knowledge in eQMS validation, FDA CSA, Part 11 compliance, and
-					quality systems.
+					I help regulated companies operationalize CSA, validate AI/ML systems in GMP environments,
+					and stand up IEC 62304 SDLCs. I also write the software — compliance tooling, data
+					pipelines, and production web apps built on FastAPI, React, and PostgreSQL.
 				</p>
 
 				<section>
@@ -51,19 +50,15 @@ export default function About() {
 					<h2 className="text-xs text-muted tracking-widest uppercase mb-6">Background</h2>
 					<div className="space-y-4 text-sm text-muted leading-relaxed">
 						<p>
-							I spent 12 years in FDA-regulated manufacturing. System failures in that world meant
-							483 observations, warning letters, and product recalls. That shaped how I think about
-							software: understand failure modes, build in observability, design systems that
-							degrade gracefully.
+							Medical devices, pharma, combination products — J&J, Philips, Acumed, Dexcom, PCI
+							Pharma Services. Validated AI/ML models for complaint disposition at Philips in 2020 —
+							an aggregator and a recommendation engine, human-in-the-loop, under CSV before CSA
+							existed. Software validation under consent decree. Stood up validation programs from
+							scratch at Acumed. Survived a 9-day FDA inspection over the QSR. Cut a global CAPA
+							backlog from 150 to 75 active.
 						</p>
 						<p>
-							I've run CAPA programs under consent decree at Philips, defended EU MDR tech file
-							audits at Acumed, validated Windchill PLM at two global medical device orgs, and built
-							Part 11 compliance tooling adopted as standard practice. Four years of hands-on eQMS
-							validation — CSA, GAMP5, IQ/OQ/PQ.
-						</p>
-						<p>
-							I didn't pivot away from regulated industries — I gained the engineering skills to
+							I didn't pivot away from regulated industries. I gained the engineering skills to
 							build better tools for them.
 						</p>
 					</div>
