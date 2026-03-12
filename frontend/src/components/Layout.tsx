@@ -29,7 +29,14 @@ export default function Layout({ children }: { children: ReactNode }) {
 						JC
 					</Link>
 					<div className="flex gap-8 text-xs text-muted tracking-wider">
-						<NavLink to="https://consulting.jasencarroll.com">consulting ↗</NavLink>
+						<a
+							href="https://consulting.jasencarroll.com"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-[#c9703c] hover:text-[#d4813f] transition-colors"
+						>
+							consulting ↗
+						</a>
 						<NavLink to="/resume">resume</NavLink>
 						<NavLink to="/contact">contact</NavLink>
 						<NavLink to="/about">about</NavLink>
